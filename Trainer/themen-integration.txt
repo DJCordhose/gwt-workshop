@@ -1,0 +1,90 @@
+Integration
+===========
+
+* Meine Aufgabe: JavaScript-Diagramm-Bibliothek anbinden
+* Aufgabe Teilnehmer: Irgend etwas an deren Anwendung anbinden (z.B. eben diese Bibliothek)
+
+Schritte:
+0. oder 5. Server-Anbindung (je nachdem ob zuerst Server oder JSNI)
+1. Ich zeige Flot anhand der Flot-Sandbox und wie das aussehen soll
+2. Ich zeige den Flot-Js-Code in Webstorm
+3. Ich zeige das fertige Ergebnis in der Anwendung
+4. JSNI-Anbindung
+
+Aufgabe REST / CORS / JSONP / Overlaytypes:
+Teilnehmer bauen REST/CORS/JSONP in ihre Anwendung ein
+   - Teile der Anwendung auf REST/CORS/JSONP umbauen
+   - Optional auch XML-Kommunikation
+     - https://developers.google.com/web-toolkit/doc/latest/DevGuideCodingBasicsXML?hl=de
+
+Aufgabe JSNI:
+- Flot#renderAsPie erweitern wie im Flot-Beispiel
+  - tilt-Parameter
+  - legend-Parameter
+
+Zusatzaufgabe JSNI:
+- Weitere Parameter von dieser Seite einbauen
+http://people.iola.dk/olau/flot/examples/pie.html
+
+Zusatzaufgabe eigene JavaScript-Bibliothek einbauen
+
+REST / CORS / JSONP / Overlaytypes
+----------------------------------
+
+Die unterschiedlichen Calls zeigen und auch, wie der Netzverkehr im Firebug aussieht
+
+- StatisticsJsni: Overlaytype für Daten vom REST-Servlet und Converter in Flot-Format
+
+- StatisticsPresenter:
+  - loadRest() / RequestBuilder / StatisticsJsni.createInstance(json): REST-Call und konvertieren des JSON
+  - loadJsonp() / JsonpRequestBuilder: JSONP-Call, JSON ist bereits konvertiert
+
+- StatisticsRestEndpoint
+   - passResult: JSON  erzeugen mit Jackson
+   - setJsonpHeaders: JSONP header
+   - doOptions / setCORSHeaders: CORS
+
+JSNI
+----
+
+- Flot-Sandbox: index.html: So sieht es in JavaScript nativ aus, zeigen im Browser
+  - #8: Hier erscheint Text beim Hovern
+  - #9: div für das Diagramm
+  - #27: Wie sehen die pie-Daten aus?
+  - #35: Wie sieht der plot-Aufruf aus?
+  - #66/#67: Event-Listener werden registriert
+  - #55: Text wird gesetzt als Reaktion auf Hover
+  - #63: Alert als Reaktion auf Click
+
+- Zettle.gwt.xml:
+  - #10: HTTP-Modul brauchen wir für REST / JSONP
+  - #12-#14: JS-Einbinden
+  - public-Ordner: Alles das wird mit ins Modul-Paket kopiert
+
+- DefaultStatisticsView
+ - #28-30: Aufbau des divs mit id=pie
+ - #49-69: Aufruf der JSNI-Anbindung
+ - #49: So kriegen wir das div-Element
+ - #53: Beim Hovern erzeugen wir ein bisschen HTML zur Anzeige des ausgewählten
+ - #63: Beim Klicken, delegieren wir die Aktion an den Presenter, der einen Event an die zentrale Applikationssteuerung abfeuert
+
+package flotwrapper: JSNI-Integration mit flot
+- Flot
+  - #12: Die native-Methode
+  - #15: Plot-Aufruf
+  - #29 / #34: Event-Listener werden registriert
+  - #31: Mit Eclipse-Code-Completion zeigen, wie der Aufruf zustande kommt und was er bedeutet
+  - #13 / #36: Aufrufe von JS-Funktionen aus Callbacks werden zur Fehlerbehandlung mit $entry gekapselt
+
+- FlotHoverHandler / FlotClickHandler: Einfach nur Java-Interfaces
+
+- FlotItem / FlotPosition: Overlaytypes für Parameter an Handler
+
+- FlotData: Overlaytype mit zusätzlicher Konvertierungsfunktionalität
+  - #14 / getInstance: Java-Map => JSON => #38-getInstance: Overlay-JavaScript-Object
+  - #30 / format: Nur Hilfsfunktion, um ein JSON-Objekt im Array zu erzeugen
+
+Super Dev Mode
+--------------
+- Geht nicht ordentlich mit Integration weil, der xsi-Loader nicht mit dem direkten Einbinden von Scripten harmoniert
+- GWT-RPC geht auch nicht, aber da würden wir mit REST oder JSONP weiter kommen

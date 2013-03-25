@@ -1,0 +1,30 @@
+Optional
+--------
+
+- Filter für Shop in Liste
+
+- DnD: Für Table ausprobieren und Fred Sauer-Kram
+- Activities and Places
+- RequestFactory
+
+Zukunft
+-------
+
+Gegenstück zu iEinkaufsZettle für Mobile bauen
+App Engine Version bauen in branch
+
+Responsive mobile Apps using Bootstrap and AngularJs
+
+
+
+Fürs Handy
+Login über Google Account
+- http://ocpsoft.org/java/setting-up-google-oauth2-with-java/
+- Responsvie und Fluid-Elemente aufnehmen
+
+Talk einreichen
+- JsConf.eu
+- Devoxx
+
+Domäne registrieren: einkaufszettle und ieinkaufszettle sind überall frei
+

@@ -1,0 +1,81 @@
+Spring-Hibernate
+================
+
+* Meine Aufgabe: Anbindung von Entitäten an DB und Kommunikation mit dem Client
+* Aufgabe Teilnehmer: Sich eine eigene Anwendung ausdenken und
+  sich für eines der Muster entscheiden (Entity / DTO / BO / JSON)
+
+Schritte:
+0. Kurze Wiederholung Spring-Hibernate, Persistence-Context, Transaktionen
+0a. Bild #1: Client/Server und Boundary/Service/Entity
+0b. Bild #2: DB/Hibernate/Spring/Transaktion/PersistenceContext
+0c. Bisschen Code zur Illustration zeigen
+1. Anwendung starten und in den Aufbau und die Bedienung einführen. Keinen Code zeigen, sondern nur im Browser.
+2. Details erklären (unten) zeigen
+3.. Anwendung mit Git (evt. EGit in Eclipse aus dem Market) auschecken und zum laufem bringen
+4. Alle Gruppen setzen ihre Anwendung um
+4a. 2er-Gruppen bilden?
+  - z.B.. Benutzer-Objekt mit einer Liste von Einkaufslisten als DTO oder als Entity
+
+
+Spring-Context laden
+--------------------
+
+- web.xml: Listener und Angabe, wo ist der Application Context
+- AbstractSpringServlet und AbstractSpringBoundary: Injizieren des Dependencies in das aktuelle Servlet
+
+- application-context.xml:
+  - #12-#14: Konfiguration der Beans
+  - #16: Persistence
+  - #22 / #30: Automatische Transaktionssteuerung
+  - #26: Dozer für DTO-Erzeugung registrieren
+  - #28: Jackson für JSON parsen / erzeugen
+
+- persistence.xml
+
+Datentransfer zum Client
+------------------------
+
+- Problematik: Entitäten sind Java und hängen im Container fest
+- Option #1: Entitäten GWT-Serliasierbar machen und an den Client übertragen, auf dem Rückweg mergen
+- Option #2: DTOs hin und her und mit Dozer mappen (könnten auch BOs mit Funktionalität sein)
+- Option #3: JSON über REST
+
+Entitäten auf dem Client
+-----------------------
+
+- ShoppingBoundary: das ist die komplette Server-Seite
+- ShoppingListPresenter#load: Aufruf von ShoppingBoundary#getAllLists gleich am Anfang
+
+- ShoppingBoundaryImpl: Die Implementierung
+  - #19 / #22: Services werden injiziert mit Spring
+  - #34: Implementierung
+    - #35: Klären: Was passiert beim Aufruf der Services mit der Transaktion und den Entitäten?
+    - #36: Ersetzen der Hibernate-Proxies mit GWT-Serialisierbaren Sachen
+
+DTOs auf dem Client
+-------------------
+
+- ShoppingBoundaryDto: Boundary Wird für Item-Verarbeitung benutzt
+
+- ItemDto: einfaches Value-Objekte, eigentlich nur Struktur, keine Logik
+
+- ItemPresenter: Verwendung im Client
+  - #saveItem()
+  - #delete()
+
+- ShoppingBoundaryDtoImpl: Die Implementierung
+  - #43 / #getItems(): Entitäten werden ganz normal mit Service geladen
+  - #38: umkopieren in DTO
+
+- WrapDetachService
+  - #66 / #wrap(): umkopieren von Item => ItemDto
+  - #67: Grundcopy mit Dozer
+  - #68 - #70: Spezielle Felder manuell
+
+DB-Tools
+--------
+
+- h2console.sh
+  - Starten geht nur, wenn GWT-Server nicht läuft, kann sich nur einer zur Zeit verbinden
+

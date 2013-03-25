@@ -1,0 +1,46 @@
+Plan KN: 5 Tage / 5 Stunden-Plan
+
+Vormittags: 2 Stunden
+Nachmittags: 3 Stunden
+
+Mo: Einführung inkl. RPC und Services
+
+Di: Projekt: DB-Best practices
+- Vormittags:
+  - Einführung in Problematik und Diskussion
+  - Installation der Anwendung über github
+- Nachmittags:
+  - Umsetzung Entity und DTO
+
+- Mi Vo: REST Calls gegen Server mit OverlayTypes
+- Mi Na:
+  - Einbinden von Bibliotheken
+  - i18n
+  - CSS
+
+- Do: Vo: MVP
+  - Aufgabe: Eigenes MVP für Benutzer basteln oder was man sonst gebaut hat ohne Tabelle
+Do Na:
+  - AppController
+    - MVP in AppController einklinken
+  - Tests
+    - Aufgabe: Test für eigenes MVP bauen
+
+Umfang der Aufgaben hier deutlich zu groß
+
+Fr Vo:
+  - UIBinder
+    - Aufgabe: View auf UI-Binder umbauen
+  - CellTable ListProvider und AsyncProvider
+    - In View einbauen
+Fr Na:
+  - CellTable weiter bauen oder was immer noch in der Pipeline ist
+
+Abschluss: 2 Stunden
+- Wrap-Up
+  - Noch mal alle Themen anhand der Folien durchgehen
+- Zusatzthemen
+- Abschließende Fragen der Teilnehmer
+
+- Blitzlicht / Feedback / Tschüß
+

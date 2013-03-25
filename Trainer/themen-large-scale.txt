@@ -1,0 +1,211 @@
+Large Scale
+===========
+
+* Unsere Aufgabe: Ein Anwendungsdesign finden, dass funktioniert
+  * mit vielen Entwicklern
+  * über lange Zeit
+  * mit viel Code
+  * ohne *unnötige* Abstraktion und *unnötige* zusätzliche Komplexität
+
+Schritte:
+- Motivation aus eigenen Erfahrungen, warum wichtig
+- MVP
+  - Grafik MVP
+  - MVP in der Anwendung im Browser zeigen: Eine Seite
+  - MVP im Code zeigen
+  - Aufgabe: Benutzerverwaltung als MVP bauen
+
+Sobald der erste nach Ansteuerung fragt, nächsten Teil nachschieben
+
+- AppController
+  - Grafik AppController
+  - AppController in der Anwendung im Browser zeigen: Umschalten zwischen Seiten, z.B. Klick auf Tortendiagramm oder
+    Items einer Liste bearbeiten
+  - AppController im Code zeigen
+  - Aufgabe: eigenes do... schreiben und MVP in die Anwendung einbetten
+
+- UiBinder
+  - Motivation über Projekt Sandbox InputPanel: Wer weiß, wie das nachher in der Anwendung aussieht
+    - schwer zu sagen, da nicht deklarativ
+    - UIBinder ist deklarativ
+  - Aufgabe: Benutzerverwaltung auf UI-Binder umbauen
+
+
+MVP
+---
+
+- Erzeugen und Aufrufen
+  - ShopPresenterGWTTest#gwtSetUp()
+
+- Model
+  - Wird im Presenter gehalten
+  - Was auch immer der View anzeigt und der Presenter manipuliert, z.B.
+    - ShopPresenter#currentEntity: Aktuell dargestellter Shop oder
+    - ShoppingListPresenter#dataProvider: Liste aller Einkaufslisten
+    - ShoppingListPresenter#currentList: Aktuell dargestellte Einkaufsliste
+
+- Presenter (z.B. ShoppingListPresenter)
+  - Presenter hält den Anwendungszustand (z.B. *was* wird dargestellt / bearbeitet)
+  - Presenter ist Chef
+  - go() zum ansteuern des Presenters mit Container in dem sich der view darstellen soll
+  - Kommuniziert mit dem Server über remote calls
+  - Kommuniziert mit anderen Presentern über einen EventBus (siehe unten)
+  - Macht Veränderungen auf dem Modell
+
+- View (z.B. DefaultShoppingListView)
+  - Kann ebenfalls Anwendungszustand halten (z.B. *wie* wird dargestellt edit/create)
+  - ist bei GWT Composite
+  - stellt Modell da
+  - Je nach Spielart:
+    a) Gibt Interfaces der Widgets nach außen zum Presenter, der dann Listener anhängt ODER
+    b) Registrierte selbst Listener und gibt vorverarbeitetes an den Presenter weiter
+  - Kein Anwendungszustand bei Spielart a)
+  - Wir machen b)
+  - setViewHandler: Callback an den Presenter registrieren
+
+
+Zentraler AppController
+-----------------------
+
+- iEinkaufsZettle: Hier geht es los
+
+- der Rest in AppController
+
+- #155: Einsprung mit go
+- #159: History mit editLists befüllen und damit die Anwendung starten
+
+- History
+  - bind() #45: Registieren an der History
+  - onValueChange(): Mitkriegen wenn eine neue URL annavigiert wird
+    - #166: das History-Token auslesen (was hinter dem # kommt)
+    - gucken, was gemacht werden soll und evtl. Parameter auslesen
+    - Wenn modul erkannte, mit do... anspringen
+
+- Navigation
+  - Navbar.ui.xml: Ganz normale Inner-/Deep-Links
+
+- Code-Splitting
+  - AppController: GWT.runAsync
+  - Zettle.gwt.xml: Initiales Laden des ersten Moduls
+
+- MVP Init in do...
+  - in do... View und Presenter erzeugen
+  - Presenter mit serivce(s), view und eventbus versehen
+    - service hier erzeugen, damit für Test gemockt werden kann
+    - view hier erzeugen, um ihn austauschbar machen zu können (z.B. für mobile) und für Test Mocking
+    - eventbus übergeben, da global und für alle gleich
+
+- Event- / Handler-Pattern
+  - EditItemsEvent
+    - Event trägt custom Payload
+    - Event hat TYPE über den man sich für diesen registrieren kann
+    - Event kann sich selbst dispatchen
+    - Feuern z.B. ShoppingListPresenter#editItems()
+      - eventBus.fireEvent(new EditItemsEvent(currentList));
+    - Bus ruft dispatch auf
+  - EditItemsEventHandler
+     - passender Handler, den man an eventbus über TYPE registriert, um Event zu fangen
+     - Z.B.: AppController#bind()
+
+- Globaler Bus
+  - bind() #47 / #54: Auf Eventtypes registrieren und Ausführungswunsch über do.... an Module weiter leiten
+  - wenn ein Modul über einen Event angesprochen wird, dann neues Item in die History
+  - Aufruf ShoppingListPresenter#editItems()
+
+Tests
+-----
+
+- Verdrahtung wie in AppController
+
+- Presenter als Logik tragende Teile des UI werden getestet
+
+- Für Blackbox-Testing Selenium nehmen - wir haben hier kein Beispiel, Vorgehen aber
+  - ensureDebugId für setzen der Debug-Ids auf einzelnen Elementen
+  - <inherits name="com.google.gwt.user.Debug"/> zum generieren der Debug-Ids mit gwt-debug- Präfix für Tests
+  - Zeigen in Projekt Sandbox, InputPanel#init, sendButton.ensureDebugId
+
+- GWT-Unit
+  - ShopPresenterGWTTest
+  - Testet bedingt auch View und Service
+
+- Mocking von Services
+  - ShopPresenterTest
+    - service und view mocken
+
+
+UI-Binder
+---------
+
+Deklarative Beschreibung des UIs und Binden an Java-Code
+
+- DefaultShoppingListView.ui.xml
+  - #14: HTML als Grundlage
+  - #25: Mischen mit bereits bekannten, normalen GWT-Komponenten
+  - #27: Angabe des ui-Felds im Java-Code
+  - #27: Angabe von Styles für die GWT-Komponente
+  - #39: Verweis auf einen Style, der bei #8 definiert ist
+  - #15: Einbinden von Komponenten aus eigenem Namensraum
+
+-  DefaultShoppingListView
+   - #57/#58, #97 / #98: Bindung durchführen
+   - #60 - #76: Felder an die gebunden wird
+   - #60: provided=true - wir binden das, aber wir erzeugen das Feld selbst im Java-Code,
+          da für deklarativ zu kompliziert
+   - #103: Binden von Events an Komponenten
+
+
+Tabellen
+--------
+
+FlexTable vs CellTable
+
+Anfangsscreen für Shopping Lists
+
+- List-Provider: Shopping Lists
+  - ShoppingListPresenter
+    - #18: Die Datenstruktur hinter dem Table ist eine Liste von Objekten, komplett auf dem Client
+    - dataProvider.getList()
+      - API von dataProvider ist getList(), normale Liste in Wrapper um Änderungen zu tracken
+      - Änderungen an Elementen in der Liste müssen über set() propagiert werden
+  - DefaultShoppingListView
+    - #91 - #96: GWT-Komponenten zum Navigieren in der Tabelle
+    - #178: Page-Size für gleichzeitig angezeigte Elemente in Tabelle
+    - #171 - #175: Optionaler KeyProvider für Vergleich von Entitäten - hier weil unsere Entitäten kein equals haben
+    - #177: Verheiraten des DataProviders mit unserem Table
+    - #180 - #195: Bei Doppelklick editieren wir die Items der Liste
+    - #addNameColumn
+      - #212 - #220: Column für den Namen hinzufügen
+      - #212: TextColumn<ShoppingList>, generischer Parameter ist der Typ der Row, Typ der Column ist String
+      - #214: String getValue(ShoppingList list) - rein Typ der Row, raus Typ der Column
+      - #222 - #238: Wie wird sortiert?
+      - #239: Am Anfang nach Namen sortieren
+    - #addEditColumn
+      - #252: Erster generischer Parameter ist Typ der Row, zweiter der der Column
+      - #253: Erzeugen der Column mit einer expliziten Zelle, die die Darstellung übernimmt
+      - #249: Eine Zelle, die sich als Button rendert und einen Handler bekommt, der auf den Klick reagiert
+      - #243: Der Handler heißt hier originellerweise Delegate
+      - ActionCell und Delegate müssen mit dem Typ der *Column* der Row matchen (zweiter gen. Parameter)
+      - Beziehung zwischen Column und Cell
+        - Jede Column hat eine Cell, die dafür zuständig ist, die Einträge des Columns zu rendern
+         - Column enthält die Cell und kümmert sich u.a. zudem um Titel, Änderungen (FieldUpdater) und Sortierung
+          - TextColumn hat z.B. implizit TextCell zum rendern
+    - addDeleteColumn: So sieht das aus, wenn man es einfach so schreibt
+
+Detail-Sicht der Items in einer Shopping List
+
+- Remote-Provider: Items in der Shopping List
+  - ItemPresenter
+    - #27: Items werden bei Bedarf - je nachdem was die Tabelle anzeigen will - asynchron vom Server geholt
+    - #41 - #49: Anfragen an den DataProvider werden ausgewertet und in einen Server-Call übersetzt
+    - #loadData(): Parameter werden für den Server-Call ausgewertet und Ergebnis des Calls an den View übergeben
+      - #140 - #141: Für Sortierungen brauchen wir den Namen der Property der Entität -
+        - diese wird bei der Erzeugung der Column in der View angegeben
+  - DefaultItemView
+    - #215: Asynchroner Sorthandler, der den Provider nach neuen Daten antriggert
+    - #243 / #260: Namen der Properties über die auf Server seite sortiert werden soll
+    - #setVisibleTableData(): Presenter liefert neue angefragte Daten zur Anzeige
+    - #setTableRowCount(): Wie viele Einträge gibt es insgesamt, wird durch Presenter anhand von Server-Daten gesetzt
+    - #refresh(): Manuelle aktualisierung der aktuelle angezeigten Daten vom Server
+    - #272 - #278: Editierbare Daten innerhalb der Tabelle
+
+

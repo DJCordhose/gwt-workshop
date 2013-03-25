@@ -1,0 +1,43 @@
+Zusatz-Themen
+=============
+
+- DnD
+  - HTML5 basiert
+    - sandbox-Projekt: InputPanel#html5StyleDndSample
+  - Standard-Bib
+    - https://code.google.com/p/gwt-dnd/
+    - https://gwt-dnd.appspot.com/
+
+- MVP-Frameworks
+  - Kein Framework: http://stackoverflow.com/questions/4399210/what-is-your-favorite-gwt-mvp-framework
+  - GWTP
+    - Main-Page: https://code.google.com/p/gwt-platform/
+    - Source: https://github.com/ArcBees/GWTP
+    - Eclipse-Plugin: https://code.google.com/p/gwt-platform/wiki/EclipsePlugin
+    - Pläne: https://code.google.com/p/gwt-platform/wiki/PlannedFeatures
+
+- Maven-Integration
+  - http://mojo.codehaus.org/gwt-maven-plugin/
+- GXT
+  - http://www.sencha.com/products/gxt
+  - GWT-Designer, der auch GXT unterstützt
+    - https://developers.google.com/web-toolkit/tools/download-gwtdesigner?hl=de
+    - https://developers.google.com/web-toolkit/tools/gwtdesigner/features/gwt/gxt
+- XML
+  - https://developers.google.com/web-toolkit/doc/latest/DevGuideCodingBasicsXML?hl=de
+
+GWTP:
+- web.xml: Nur ein Servlet, das verteilt
+- Dependency injection auf Client und auf Server seite (GIN / GUICE)
+- View ist dümmer
+- Actions - Server-Calls -  (z.B. werden über SendTextToServer) werden über DispatchAsync geschickt
+  - ResponsePresenter als Beispiel
+- Steuerung der Anwendung über das senden von Places mit Namen
+- Empfangen Place-Proxies mit @NameTokens
+  - Z.B.: ResponsePresenter#35 / #36
+
+Binding:
+- https://developers.google.com/web-toolkit/doc/latest/DevGuideUiEditors?hl=de
+
+RequestFactory
+- https://developers.google.com/web-toolkit/doc/latest/DevGuideRequestFactory

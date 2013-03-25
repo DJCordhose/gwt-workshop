@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2333d61-f6fb-45c2-9bec-34a61cd127ff" name="Default" comment="Schritte der Projekt-Tage skizziert, Details fehlen noch für">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Painless JavaScript/Application Stability with REST.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Painless JavaScript/Application Stability.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/.settings/com.google.appengine.eclipse.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/.settings/com.google.gdt.eclipse.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/META-INF/jdoconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/META-INF/persistence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/eu/zeigermann/demo/customers/Customer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/eu/zeigermann/demo/customers/CustomerRestEndpoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/eu/zeigermann/demo/customers/CustomerService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/eu/zeigermann/demo/customers/MapCustomerService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/src/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/war.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/appengine-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/META-INF/jdoconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/META-INF/persistence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/eu/zeigermann/demo/customers/Customer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/eu/zeigermann/demo/customers/CustomerRestEndpoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/eu/zeigermann/demo/customers/CustomerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/eu/zeigermann/demo/customers/MapCustomerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/appengine-api-1.0-sdk-1.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/appengine-api-labs.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/appengine-endpoints.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/appengine-jsr107cache-1.7.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/asm-4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/datanucleus-api-jdo-3.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/datanucleus-api-jpa-3.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/datanucleus-appengine-2.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/datanucleus-core-3.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/geronimo-jpa_2.0_spec-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/gson-2.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/jdo-api-3.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/jsr107cache-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/lib/jta-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/logging.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/angular/angular-resource.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/css/bootstrap.simplex.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/persons-remote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/app/persons-remote.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/RESTFul Services Demo/war/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/angular/angular-resource.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/css/bootstrap.simplex.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/customers-ts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/customers-ts.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/customers-ts.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/customers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/customers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/inheritance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/jasmine-1.3.1/jasmine-html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/jasmine-1.3.1/jasmine.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/jasmine-1.3.1/jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/jasmine-1.3.1/json2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-class-module-inheritance.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-class-module-inheritance.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-class-module.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-class-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-class.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-ts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-ts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-ts.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons-ts.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/persons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/sandbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/sandbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/spec/SpecRunner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Painless JavaScript/code/spec/sandbox-spec.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaScript Training/101/index.html" afterPath="$PROJECT_DIR$/../JavaScript Training/101/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Painless JavaScript/jax.html" afterPath="$PROJECT_DIR$/../Painless JavaScript/jax.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaScript Training/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JavaScript Training/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Painless JavaScript/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Painless JavaScript/.idea/workspace.xml" />
+    </list>
+    <ignored path="GWT Workshop.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/bootstrap/application.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360062662885" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/bootstrap/css/bootstrap.min.css" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358342325905" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/bootstrap/css/bootstrap.css" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358856298750" ignored="false" />
+    <file path="/user.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358250334789" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/user.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361008339460" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361008339460" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/301/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359321789721" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/packages/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358271483998" ignored="false" />
+    <file path="/plan.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364033666930" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Zeigermann/.idea/workspace.xml" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363111036316" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Zeigermann/impressum.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358110833659" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Zeigermann/redirect/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358271485262" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Zeigermann/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364030312402" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359105415521" ignored="false" />
+    <file path="/Dummy.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364034142421" ignored="false" />
+    <file path="/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364030983512" ignored="false" />
+    <file path="/todo.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363699054175" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/Mortgage Calculator/war/mortgage.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358808167880" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/Trainer/todo.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359321819141" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358542510598" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla/aha.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358535394492" ignored="false" />
+    <file path="/aha.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358535382744" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/Trainer/plan.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359110195243" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/pureHtml/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358535822649" ignored="false" />
+    <file path="$USER_HOME$/Develop/unterhaltsrechner-appengine/war/js/unterhalt_mod.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358534476285" ignored="false" />
+    <file path="/unterhalt_mod.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358534473722" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/Mortgage Calculator/war/src/localCalculator.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358537673033" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla-decoupled/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358539598580" ignored="false" />
+    <file path="/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358676716354" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla-decoupled/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358542975084" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla-decoupled/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358543436847" ignored="false" />
+    <file path="/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358675630989" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358544632334" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358547770548" ignored="false" />
+    <file path="/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361351663196" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery/spec/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358548351340" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery/spec/spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358548386723" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla-decoupled-remote/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358633689035" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/vanilla-decoupled-remote/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358631746552" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-remote/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358674872030" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-remote/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358677298934" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/spec/spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358675666383" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358676730005" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-class/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358675435790" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-class/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358675473058" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358675630989" ignored="false" />
+    <file path="/spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358687894756" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358678546549" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/spec/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358677876317" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/js/ui/main.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358678480832" ignored="false" />
+    <file path="/main.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358681344711" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/js/main.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358681344711" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/js/ui/ui.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358678640444" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/js/ui/ctrl.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358681856841" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358679224710" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/js/main.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358679398357" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/js/ui/ctrl.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358679655148" ignored="false" />
+    <file path="/ctrl.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358681855136" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-module-class/js/spec/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358679873333" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-package/js/logic/mortgageModule.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358681793463" ignored="false" />
+    <file path="/mortgageModule.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359217973017" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-requireJS/js/spec/spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358688577917" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/jQuery-requireJS/js/spec/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358688641260" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/bootstrap/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358697037010" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/Mortgage Calculator/war/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358697529059" ignored="false" />
+    <file path="/mortgage.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358808166777" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/Mortgage Calculator/war/sampleApp.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358807034114" ignored="false" />
+    <file path="/sampleApp.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358794359241" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/Mortgage Calculator/war/src/restCalculator.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359909577313" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/exercise/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359110674676" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/HelloWorld/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359070326068" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/Mortgage Calculator/war/src/ctrl.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359909533175" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/reference.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361358009183" ignored="false" />
+    <file path="/reference.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361357979594" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/todo.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1358948789102" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/Links/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359204571544" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359041204800" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/sandbox/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359041272854" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/sandbox/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359310959429" ignored="false" />
+    <file path="/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361029098223" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/201/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359317650814" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/grundlagen/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359107539122" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/grundlagen2/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359108546429" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Training/code/9 jQuery-requireJS/js/logic/mortgageModule.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359318383184" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Live Hack/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359283033389" ignored="false" />
+    <file path="$PROJECT_DIR$/../JavaScript Live Hack/oose.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359285737863" ignored="false" />
+    <file path="/oose.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360748119811" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/plan.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359293606466" ignored="false" />
+    <file path="/sandbox.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360752434823" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/spec/SpecRunner.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359286916690" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/spec/spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359286540883" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359286958981" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/spec/sandbox-spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359287018542" ignored="false" />
+    <file path="/sandbox-spec.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359287003090" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/customers.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359307040541" ignored="false" />
+    <file path="/customers.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359307040152" ignored="false" />
+    <file path="/customers.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359304440053" ignored="false" />
+    <file path="/persons.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359971649209" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/customers-ctrl.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359305405815" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/customers-ts.ts" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359310395749" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/customers-ts.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359310397216" ignored="false" />
+    <file path="/customers-ts.ts" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359310392948" ignored="false" />
+    <file path="/customers-ts.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359306977638" ignored="false" />
+    <file path="$PROJECT_DIR$/../Abendvortrag oose/code/customers-ts.js.map" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359310397216" ignored="false" />
+    <file path="/jax.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361015703139" ignored="false" />
+    <file path="/persons-class-module-inheritance.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359888357520" ignored="false" />
+    <file path="/persons-class-module-inheritance.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359887349545" ignored="false" />
+    <file path="/persons-remote.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359904687021" ignored="false" />
+    <file path="/persons-remote.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360701110308" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/RESTFul Services Demo/war/persons-remote.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359912001311" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/RESTFul Services Demo/war/WEB-INF/web.xml" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359913932849" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.gwt/RESTFul Services Demo/war/app/persons-remote.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359915974942" ignored="false" />
+    <file path="/persons-ts.ts" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359930687784" ignored="false" />
+    <file path="/persons.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1359973304427" ignored="false" />
+    <file path="/inheritance.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360231564372" ignored="false" />
+    <file path="/sandbox-ts.ts" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360779997033" ignored="false" />
+    <file path="$USER_HOME$/Develop/Sandbox/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360064076904" ignored="false" />
+    <file path="/application.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360062556086" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/html5/xhtml5.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541238" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541238" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xml" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541238" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/xslt-schema.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xhtml1-strict.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xsl" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xslt-1_0.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/catalog.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/XMLSchema.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xinclude.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xml.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541239" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xslt-2_0.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541240" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/XMLSchema-instance.xsd" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541240" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/relaxng.rng" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361006541240" ignored="false" />
+    <file path="$USER_HOME$/Develop/workspace.floreysoft/Ultradox Help/war/bootstrap/css/bootstrap-responsive.css" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360257897609" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Flot-Sandbox/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363698504130" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Flot-Sandbox/flot-0.7/jquery.flot.pie.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360609742280" ignored="false" />
+    <file path="/fragment.js2" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360698571254" ignored="false" />
+    <file path="$PROJECT_DIR$/../Painless JavaScript/code/sandbox-ts.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360780066938" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/large-scale-development-with-JavaScript-demo/customers-ts.ts" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1360863079976" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/large-scale-development-with-JavaScript-demo/README.md" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361010422136" ignored="false" />
+    <file path="/README.md" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361010420973" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/large-scale-development-with-JavaScript-demo/RESTFul Services Demo/war/app/persons-remote.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361012354266" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/large-scale-development-with-JavaScript-demo/RESTFul Services Demo/war/WEB-INF/lib/.gitignore" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361012591160" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/large-scale-development-with-JavaScript-demo/sandbox.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361036224464" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/large-scale-development-with-JavaScript-demo/.idea/workspace.xml" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361036267310" ignored="false" />
+    <file path="$USER_HOME$/Develop/Sandbox/ultradox-jsonp/index.html" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361281538353" ignored="false" />
+    <file path="$USER_HOME$/Develop/Sandbox/ultradox-jsonp/app.js" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1361357914412" ignored="false" />
+    <file path="/themen.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363008149604" ignored="false" />
+    <file path="/themen-spring-hibernate.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363691632882" ignored="false" />
+    <file path="/themen-integration.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364033922053" ignored="false" />
+    <file path="/themen-MVP.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363011682068" ignored="false" />
+    <file path="/themen-large-scale.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364033837838" ignored="false" />
+    <file path="$USER_HOME$/WebstormProjects/Flot-Sandbox/.idea/workspace.xml" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1363698517127" ignored="false" />
+    <file path="/themen-zusatz.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364033954892" ignored="false" />
+    <file path="/ablauf-kn.txt" changelist="a2333d61-f6fb-45c2-9bec-34a61cd127ff" time="1364034071538" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="GWT Workshop" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="46" selection-start="2472" selection-end="2472" vertical-scroll-proportion="-20.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/i18n/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="221" column="64" selection-start="8699" selection-end="8699" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="themen-large-scale.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trainer/themen-large-scale.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="29" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plan.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trainer/plan.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="86" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ablauf-kn.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Trainer/ablauf-kn.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="41" selection-start="728" selection-end="728" vertical-scroll-proportion="0.6827881">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="themen-spring-hibernate.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trainer/themen-spring-hibernate.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="themen-integration.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trainer/themen-integration.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="25" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trainer/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="49" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="themen-zusatz.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trainer/themen-zusatz.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="68" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/History/index.html" />
+        <option value="$PROJECT_DIR$/HelloWorld/index.html" />
+        <option value="$PROJECT_DIR$/Trainer/themen.txt" />
+        <option value="$PROJECT_DIR$/Trainer/themen-MVP.txt" />
+        <option value="$PROJECT_DIR$/RPC/index.html" />
+        <option value="$PROJECT_DIR$/UI/index.html" />
+        <option value="$PROJECT_DIR$/ClientBundle/index.html" />
+        <option value="$PROJECT_DIR$/Trainer/themen-spring-hibernate.txt" />
+        <option value="$PROJECT_DIR$/Trainer/todo.txt" />
+        <option value="$PROJECT_DIR$/i18n/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Trainer/plan.txt" />
+        <option value="$PROJECT_DIR$/Trainer/themen-large-scale.txt" />
+        <option value="$PROJECT_DIR$/Trainer/themen-integration.txt" />
+        <option value="$PROJECT_DIR$/Trainer/themen-zusatz.txt" />
+        <option value="$PROJECT_DIR$/Trainer/ablauf-kn.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="874" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trainer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Structure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="i18n" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="History" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloWorld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeferredBinding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Compiler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClientBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GWT Workshop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cell" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Develop/Sandbox" />
+    <property name="FullScreen" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="8a683f63-0be4-4be9-9971-9700c34b9714">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Fotos" />
+      <recent name="$PROJECT_DIR$/Trainer" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="$PROJECT_DIR$/../de_neu" Dictionaries="0" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2333d61-f6fb-45c2-9bec-34a61cd127ff" name="Default" comment="" />
+      <created>1357936143746</created>
+      <updated>1357936143746</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Finished first version minus CSS resources">
+      <created>1360628826228</created>
+      <updated>1360628826228</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finished CSS resources and client bundles thus full workshop prepared - hooray!">
+      <created>1360676882445</created>
+      <updated>1360676882445</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Endgültige Überarbeitung der GWT Folien">
+      <created>1363037615514</created>
+      <updated>1363037615514</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Schritte der Projekt-Tage skizziert, Details fehlen noch für large-scale und hibernate-dto">
+      <created>1363085597105</created>
+      <updated>1363085597105</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Mehr Fortschritt in Konzepten, was fehlt sieht todo.txt">
+      <created>1363087701930</created>
+      <updated>1363087701930</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Konzepte für spring-hibernate fertig, large-scale fehlen noch ein paar">
+      <created>1363112413016</created>
+      <updated>1363112413016</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Mehr Projekte skizziert, es fehlt nur noch MVP">
+      <created>1363171860913</created>
+      <updated>1363171860913</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finale Version">
+      <created>1363175250695</created>
+      <updated>1363175250695</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Letzte Überarbeitungen">
+      <created>1363444164272</created>
+      <updated>1363444164272</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Erweiterung der Arbeitsbeschreibungen">
+      <created>1363698920271</created>
+      <updated>1363698920271</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Zusatzthemen aufgenommen">
+      <created>1363708241451</created>
+      <updated>1363708241451</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Bilder und Themen dazu">
+      <created>1363798714193</created>
+      <updated>1363798714194</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- Foto-Link auf Drive&#10;- Folien Endversion KN">
+      <created>1363932518839</created>
+      <updated>1363932518839</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finale Version nach KN Workshop">
+      <created>1364029885545</created>
+      <updated>1364029885545</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Erfahrungen aus notizen Kühne und Nagel Seminar eingearbeitet">
+      <created>1364034146611</created>
+      <updated>1364034146611</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15781923" sideWeight="0.96031743" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erfahrungen aus notizen Kühne und Nagel Seminar eingearbeitet" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Finished first version minus CSS resources" />
+    <MESSAGE value="Finished CSS resources and client bundles thus full workshop prepared - hooray!" />
+    <MESSAGE value="Endgültige Überarbeitung der GWT Folien" />
+    <MESSAGE value="Schritte der Projekt-Tage skizziert, Details fehlen noch für large-scale und hibernate-dto" />
+    <MESSAGE value="Mehr Fortschritt in Konzepten, was fehlt sieht todo.txt" />
+    <MESSAGE value="Konzepte für spring-hibernate fertig, large-scale fehlen noch ein paar" />
+    <MESSAGE value="Mehr Projekte skizziert, es fehlt nur noch MVP" />
+    <MESSAGE value="Finale Version" />
+    <MESSAGE value="Letzte Überarbeitungen" />
+    <MESSAGE value="Erweiterung der Arbeitsbeschreibungen" />
+    <MESSAGE value="Zusatzthemen aufgenommen" />
+    <MESSAGE value="Bilder und Themen dazu" />
+    <MESSAGE value="- Foto-Link auf Drive&#10;- Folien Endversion KN" />
+    <MESSAGE value="Finale Version nach KN Workshop" />
+    <MESSAGE value="Erfahrungen aus notizen Kühne und Nagel Seminar eingearbeitet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="-21.25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cell/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="32" selection-start="1562" selection-end="1634" vertical-scroll-proportion="-1.3333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structure/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="14" selection-start="1578" selection-end="1578" vertical-scroll-proportion="-11.75" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeferredBinding/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientBundle/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="41" selection-start="103" selection-end="103" vertical-scroll-proportion="0.016968327" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="64" selection-start="8699" selection-end="8699" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="49" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="46" selection-start="2472" selection-end="2472" vertical-scroll-proportion="-20.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/plan.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="86" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/themen-large-scale.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="29" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/themen-integration.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="25" selection-start="2913" selection-end="2913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/themen-zusatz.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="68" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/themen-spring-hibernate.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trainer/ablauf-kn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="41" selection-start="728" selection-end="728" vertical-scroll-proportion="0.6827881">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

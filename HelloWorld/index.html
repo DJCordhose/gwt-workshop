@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GWT Hello World</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+        <script src="../reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Hello World GWT</h1>
+                    <h3>Installation, Tools</h3>
+					<p>
+						<small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a></small>
+					</p>
+                    <p>
+                        <a href="index.html?print-pdf" target="_blank">PDF Version</a>
+                    </p>
+				</section>
+
+                <section>
+                    <h1>Los geht's!</h1>
+                </section>
+
+                <section>
+                    <h2>Installation</h2>
+                    <ul>
+                        <li class="fragment">JDK
+                        <li class="fragment">Eclipse JEE
+                        <li class="fragment"><a href="https://developers.google.com/eclipse/docs/download">Google Eclipse Plugin</a>
+                        <li class="fragment"><a href="https://developers.google.com/web-toolkit/download">GWT SDK (Compiler, jars, etc.)</a>
+                        <li class="fragment">Firefox
+                        <li class="fragment">GWT-Dev-Mode-Plugin für Firefox (wird beim ersten Gebrauch automatisch installiert)
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Übung: Hello World</h2>
+                    </section>
+                    <section>
+                        <h2>Teil 1</h2>
+                        <ul>
+                            <li>Installiere die benötigte Software
+                            <li>Erzeuge ein GWT-Projekt und lasse dir Sample-Code erzeugen
+                                <ul>
+                                    <li>Trage dabei dein SDK in das Google Plugin ein
+                                </ul>
+                            </li>
+                            <li>Starte das Projekt im "Development Mode" und probiere es mit Firefox aus
+                            <li>Vereinfache den Code des Projekts, so dass nur noch ein einfaches <em>Hello World</em> übrig bleibt - lösche allen Server-Code
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Teil 2</h2>
+                        <ul>
+                            <li>Wo ist die Modul-Beschreibung und was steht darin?
+                            <li>Compiliere das Projekt und lass es im "Production Mode" laufen
+                                <ul>
+                                    <li>Fühlt sich das anders an?
+                                    <li>Wo liegt das JavaScript? Wie wird es geladen?
+                                    <li>Wie wechselt man zwischen Development- und Production-Mode?
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+			</div>
+
+		</div>
+
+		<script src="../reveal.js/lib/js/head.min.js"></script>
+		<script src="../reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/../reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on ../reveal.js
+				dependencies: [
+					{ src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

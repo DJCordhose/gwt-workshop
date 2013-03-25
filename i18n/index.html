@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GWT i18n</title>
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="../reveal.js/css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+        <script src="../reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h3>Internationalisierung</h3>
+					<p>
+						<small><a href="http://zeigermann.eu">Oliver Zeigermann</a> / <a href="http://twitter.com/djcordhose">@DJCordhose</a></small>
+					</p>
+                    <p>
+                        <a href="index.html?print-pdf" target="_blank">PDF Version</a>
+                    </p>
+				</section>
+
+                <section>
+                    <h3>Text, Zahlen und Datum</h3>
+                    <p><a target="_blank" href="https://developers.google.com/web-toolkit/doc/latest/DevGuideI18n">Developer's Guide - Internationalization</a></p>
+                    <p><a target="_blank" href="https://developers.google.com/web-toolkit/doc/latest/DevGuideCodingBasicsFormatting">Coding Basics - Number and Date Formatting</a></p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Kochrezept Locales konfigurieren</h2>
+                    </section>
+                    <section>
+                        <h3>Schritt 1: Modul-Beschreibung erweitern</h3>
+                        <pre><code class="xml" contenteditable>
+&lt;!-- French language, independent of country -->
+&lt;extend-property name="locale" values="fr"/>
+
+&lt;!-- French in France -->
+&lt;extend-property name="locale" values="fr_FR"/>
+
+&lt;!-- French in Canada -->
+&lt;extend-property name="locale" values="fr_CA"/>
+
+&lt;!-- English language, independent of country -->
+&lt;extend-property name="locale" values="en"/>
+
+&lt;!-- Fallback locale is "default", but sucks -->
+&lt;set-property-fallback name="locale" value="en"/>
+                        </code></pre>
+
+                    </section>
+                    <section>
+                        <h3>Schritt 2: Gewünschtes Lokale zur Laufzeit angeben</h3>
+                        <pre><code class="xml" contenteditable>
+&lt;!-- Specify in host page -->
+&lt;meta name="gwt:property" content="locale=fr_CA">
+
+&lt;!-- OR in URL -->
+http://www.example.org/myapp.html?locale=fr_CA
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Kochrezept Statisches i18n</h2>
+                    </section>
+                    <section>
+                        <h3>Die Auswahl des Locales erfolgt zur Compilezeit</h3>
+                    </section>
+                    <section>
+                        <h3>Schritt 1: Konstanten Definieren</h3>
+                        <pre><code class="java" contenteditable>
+public interface MyConstants extends Constants {
+    String hello();
+    boolean inEu();
+}
+                        </code></pre>
+                        <pre><code class="properties" contenteditable>
+# MyConstants_de.properties
+hello = Hallo Welt
+inEu = true
+                        </code></pre>
+
+                    </section>
+                    <section>
+                        <h3>Schritt 2: Konstanten nutzen</h3>
+                        <pre><code class="java" contenteditable>
+MyConstants myConstants = GWT.create(MyConstants.class);
+
+String text = myConstants.inEu() ?
+                            myConstants.hello() :
+                            "Hello from inside EU";
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>ODER Schritt 1: Messages Definieren</h3>
+                        <pre><code class="java" contenteditable>
+public interface MyMessages extends Messages {
+    String hello(String name);
+}
+                        </code></pre>
+                        <pre><code class="properties" contenteditable>
+# MyMessages.properties
+hello = Hello {0}
+                        </code></pre>
+
+                    </section>
+                    <section>
+                        <h3>Schritt 2: Messages nutzen</h3>
+                        <pre><code class="java" contenteditable>
+MyMessages myMessages = GWT.create(MyMessages.class);
+
+String text = myMessages.hello("Olli");
+                        </code></pre>
+                    </section>
+                </section>
+<!--
+                <section>
+                    <section>
+                        <h2>Kochrezept dynamisches i18n</h2>
+                    </section>
+                    <section>
+                        <h3>Lokalisierte Texte liegen in globalen JavaScript Objekten</h3>
+                        <p>typischerweise dynamisch durch Servlet serverseitig in Host Page erzeugt</p>
+                    </section>
+                    <section>
+                        <h3>Schritt 1: JavaScript Objekt erzeugen</h3>
+                        <pre><code class="javascript" contenteditable>
+var user = {
+    email: 'oliver.zeigermann@gmail.com',
+    nickName: 'Olli'
+};
+                        </code></pre>
+
+                    </section>
+                    <section>
+                        <h3>Schritt 2: Dictionary erzeugen und verwenden</h3>
+                        <pre><code class="java" contenteditable>
+Dictionary user = Dictionary.getDictionary("user");
+String name = user.get("nickName");
+                        </code></pre>
+                    </section>
+                </section>
+-->
+                <section>
+                    <section>
+                        <h2>Kochrezept Number Formatting</h2>
+                    </section>
+                    <section>
+                        <h4>Wie in normalem Java, nur Locale kann nicht angegeben werden</h4>
+                        <p>Implementierung läuft nur auf dem Client, nicht auf Server</p>
+                    </section>
+                    <section>
+                        <h3>Number</h3>
+                        <pre><code class="java" contenteditable>
+NumberFormat fmt = NumberFormat.getDecimalFormat();
+BigDecimal value = BigDecimal.valueOf(12345.6789);
+String formatted = fmt.format(value);
+// locale=de: 12.345,679
+// locale=en: 12,345.679
+
+NumberFormat fmt = NumberFormat.getFormat("000000.000000");
+// ...
+// locale=de: 012345,678900
+// locale=en: 012345.678900
+
+                        </code></pre>
+                        <pre><code class="java" contenteditable>
+double number = fmt.parse(formatted);
+                        </code></pre>
+
+                    </section>
+                    <section>
+                        <h3>Beschreibung des Formats</h3>
+                        <p><a target="_blank" href="http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/i18n/client/NumberFormat.html">
+                         Pattern Specification
+                        </a></p>
+                    </section>
+
+                </section>
+
+
+                <section>
+                    <section>
+                        <h2>Kochrezept Date Formatting</h2>
+                    </section>
+                    <section>
+                        <p>DateTimeFormat ersetzt DateFormat und TimeFormat</p>
+                        <p class="fragment">Implementierung läuft nur auf dem Client, nicht auf Server</p>
+                        <p class="fragment">Es gibt zwei Implementierungen: Eine in i18.client, eine in i18n.shared. Die in client ist deprecated, die in shared ist nur halb durchgezogen, da sie auf Klassen in client basiert</p>
+                        <p class="fragment">Calendar gibt es nicht</p>
+                    </section>
+                    <section>
+                        <h3>Beschreibung des Formats</h3>
+                        <p><a href="http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/i18n/shared/DateTimeFormat.html">
+                            Pattern Specification
+                        </a></p>
+                    </section>
+                    <section>
+                        <h3>Date</h3>
+                        <pre><code class="java" contenteditable>Date now = new Date();
+DateTimeFormat shortDateFormat = DateTimeFormat.getFormat(DateTimeFormat.PredefinedFormat.DATE_SHORT);
+DateTimeFormat longTimeFormat = DateTimeFormat.getFormat(DateTimeFormat.PredefinedFormat.TIME_LONG);
+DateTimeFormat mediumDateTimeFormat = DateTimeFormat.getFormat(DateTimeFormat.PredefinedFormat.DATE_TIME_MEDIUM);
+
+String formatted = shortDateFormat.format(now);
+// locale=de: 16.01.13
+// locale=en: 1/16/13
+
+DateTimeFormat format = DateTimeFormat.getFormat("MMMM yyyy");
+// ...
+// locale=de: Januar 2013
+// locale=en: January 2013</code></pre>
+                        <pre><code class="java" contenteditable>
+Date parsed = shortDateFormat.parse(formatted);
+                        </code></pre>
+
+                    </section>
+                </section>
+    </div>
+
+		</div>
+
+		<script src="../reveal.js/lib/js/head.min.js"></script>
+		<script src="../reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/../reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on ../reveal.js
+				dependencies: [
+					{ src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

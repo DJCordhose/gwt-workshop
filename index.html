@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GWT Einführung</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>GWT Workshop</h2>
+                    <!--<h4>Eine Einführung</h4>-->
+					<p>
+						<small><a href="mailto:oliver.zeigermann@gmail.com">Oliver Zeigermann</a> / <a href="http://zeigermann.eu">http://zeigermann.eu</a></small>
+					</p>
+                    <p>
+                        <a href="index.html?print-pdf" target="_blank">Druck-Version</a>
+                    </p>
+				</section>
+
+                <section>
+                    <h2>Oliver Zeigermann</h2>
+                    <img src="Trainer/picture.JPG" height="200">
+                    <ul>
+                        <li><a href="http://zeigermann.eu">http://zeigermann.eu</a>
+                        <li><a href="https://twitter.com/DJCordhose">@DJCordhose</a>
+                        <li><a href="https://github.com/DJCordhose">https://github.com/DJCordhose</a>
+                        <li><a href="http://javatojavascript.blogspot.de/">javatojavascript.blogspot.de</a>
+                        <li><a href="http://programmingnerd.blogspot.de/">programmingnerd.blogspot.de</a>
+                        <li><a href="http://www.oose.de/m/oliver-zeigermann">www.oose.de/m/oliver-zeigermann</a>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Organisatorisches</h2>
+                    <ul>
+                        <li>Du oder Sie?
+                        <li>Ich möchte euch kennen lernen
+                        <li>Zeiten
+                        <li>Essen
+                        <li>Organisatorische Fragen von euch
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Online-Quellen</h2>
+                    <ul>
+                        <li>Diese Folien: <a href="http://zeigermann.eu/gwt">http://zeigermann.eu/gwt</a>
+                        <li>Projekte
+                            <ul>
+                                <li><a href="https://github.com/DJCordhose/iEinkaufsZettle">Das Einkaufszettle-Projekt</a></li>
+                                <li><a href="https://github.com/DJCordhose/flot-sandbox">JavaScript-Version der Tortendiagramme</a>
+                                <li><a href="https://github.com/DJCordhose/gwt-sandbox">Das Beispielprojekt</a>
+                            </ul>
+                    </ul>
+                </section>
+
+                <!--
+                <section>
+                    <h2>Vorgehen</h2>
+                    <p>Wir entwickeln zusammen eine kleine Applikation, die nach und nach um die erlernten Techniken erweitert wird. Installation von GWT und der Tools ist Teil des Seminars.</p>
+                </section>
+-->
+
+                <section>
+                    <h2>Lernziel</h2>
+                    <p>Ihr</p>
+                    <ul>
+                        <li class="fragment">könnt selbständig anhand der Standard-Dokumentation arbeiten
+                        <li class="fragment">habt einen Überblick über die wichtigsten Themen in GWT
+                        <li class="fragment">könnt die gängigen Techniken einschätzen und habt eine architektonische Übersicht
+                    </ul>
+                    <br><br>
+                    <p class="fragment">Dieser Workshop ist Grundlage für weiteres Lernen</p>
+
+                </section>
+
+                <section>
+                    <h2>Workshop?</h2>
+                    <p  class="fragment">Workshop = Werkstatt</p>
+                    <p  class="fragment">Wie Seminar, nur</p>
+                    <p>
+                    <ul>
+                        <li class="fragment">Wir bauen etwas zusammen
+                        <li class="fragment">Hoher Praxis-Anteil
+                        <li class="fragment">Hohe Praxis-Relevanz
+                        <li class="fragment">Keine idealisierten Bedingungen
+                        <li class="fragment">Wir arbeiten mit der GWT-Original-Doku
+                    </ul>
+                    </p>
+
+                    <h4 class="fragment"><b>Am wichtigsten:</b>Freiheitsgrade</h4>
+                </section>
+
+<!--
+                <section>
+                    <h2>Voraussetzungen</h2>
+                    <p>Teilnehmer</p>
+                    <ul>
+                        <li class="fragment">haben sehr gute Java-Kenntnisse
+                        <li class="fragment">Grundkenntnisse in HTML
+                        <li class="fragment">Erfahrungen mit Webanwendungen
+                    </ul>
+                </section>
+-->
+                <section>
+                    <section>
+                        <h1>Themen</h1>
+                    </section>
+                    <section>
+                        <h2>Aufklärung</h2>
+                        <p>Anwendungsentwicklung für das Web ist viel aufwändiger als für den Desktop</p>
+                        <ul>
+                            <li class="fragment">Gründe, u.a., Java/JavaScript, DOM, Remoting, unterschiedliche Philosophien
+                            <li class="fragment">Aufwand steigt dramatisch, wenn unterschiedliche Browser oder IE<9 unterstützt werden sollen
+                            <li class="fragment">bisher hat keine Technik die Aufwände der Web-Anwendungsentwicklung generell gelöst, auch GWT nicht
+                            <li class="fragment">die Entwicklung eurer Anwendung wird schwieriger sein und länger dauern als ihr denkt
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Einführung: 2 Tage</h2>
+                        <ol>
+                            <li class="fragment"><a href="HelloWorld/index.html" target="_blank">Installation, Tools und Hello World
+                                <!--(dreiviertel Tag)-->
+                            </a>
+                            <li class="fragment"><a href="UI/index.html" target="_blank">UI und Widgets
+                            <!--(viertel Tag)-->
+                        </a>
+                            <li class="fragment"><a href="RPC/index.html" target="_blank">RPC und Services
+                            <!--(halber Tag)-->
+                        </a>
+                            <li class="fragment"><a href="i18n/index.html" target="_blank">i18n
+                                <!--(halber Tag)-->
+                            </a>
+                            <li class="fragment"><a href="ClientBundle/index.html" target="_blank">Client Bundles für Images und CSS
+                            <!--(halber Tag)-->
+                            </a>
+                            <li class="fragment"><a href="https://docs.google.com/presentation/d/12XA4xCjRtWdFbBxSGrq_L4bbvj370YFBEr0No3yggTc/edit?pli=1#slide=id.g5cd9dcd9_0_23" target="_blank">Architekturelle Übersicht
+                                <!--(viertel Tag)-->
+                            </a>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h2>Projekte: 3 Tage</h2>
+                        <ol>
+                            <li class="fragment">Best Practices: Datenbanken, Entitäten, Transaktionen, Hibernate- und Spring-Integration
+                            <li class="fragment"><a href="https://developers.google.com/web-toolkit/articles/mvp-architecture"  target="_blank">GWT in größeren Projekten: MVP, Bus-Kommunikation, Tests und CodeSplitting</a>
+                            <li class="fragment"><a href="JS/index.html"  target="_blank">Integration von Client-Bibliotheken und Webservices (JSNI, Overlaytypes, REST, JSONP)</a>
+                            <!-- Das schieben wir in GWT in größeren Projekten rein -->
+                            <!--<li class="fragment"><a href="UIBinder/index.html">Projekt: UIBinder</a>-->
+                            <!--<li class="fragment"><a href="Cell/index.html"  target="_blank">Tables, Grids und Cells</a>-->
+                            <!--
+                            <li class="fragment"><a href="Structure/index.html">Struktur und Organisation von Projekten (viertel Tag)</a>
+                            <li class="fragment"><a href="https://developers.google.com/web-toolkit/articles/mvp-architecture">Projekt: MVP, Bus und Code-Splitting (ein Tag)</a>
+                            <li class="fragment"><a href="Compiler/index.html">Der GWT-Compiler (viertel Tag)</a>
+                            <li class="fragment"><a href="DeferredBinding/index.html">Deferred Binding (viertel Tag)</a>
+                            -->
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h3>Referenzen zu Projektbeschreibungen</h3>
+                        <ol>
+                            <li><a href="Trainer/themen-spring-hibernate.txt"  target="_blank">Datenbanken, Entitäten, Transaktionen, Hibernate- und Spring-Integration</a>
+                            <li><a href="Trainer/themen-large-scale.txt"  target="_blank">GWT in größeren Projekten: MVP, Bus-Kommunikation, Tests und CodeSplitting</a>
+                            <li><a href="Trainer/themen-integration.txt"  target="_blank">Integration von Client-Bibliotheken und Webservices (JSNI, Overlaytypes, REST, JSONP)</a>
+                            <li><a href="Trainer/themen-zusatz.txt"  target="_blank">Zusatzthemen</a>
+                            <li><a href="https://docs.google.com/folder/d/0B7cOnVvQTFcUeFpZRnl6d0t4WkE/edit?usp=sharing" target="_blank">Fotos</a>
+                        </ol>
+                    </section>
+                </section>
+
+            </div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

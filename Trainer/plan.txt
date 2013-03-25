@@ -1,0 +1,120 @@
+Normales Seminar - Einführung in GWT: 3 Tage
+
+Tag 1: Einführung, so weit wie man kommt, mindestens bis GWT-RPC
+Tag 2: Installation der iZettle-Anwendung und MVP / AppController
+Tag 3: UI-Binder und CellTable, evtl. zum Abschluss architekturelle Übersicht aus Talk
+
+
+5 Tage / 5 Stunden-Plan
+
+Konzept
+-------
+
+Es wird mehr selbständig an einem Thema gearbeitet, wenig frontaler Stil.
+
+http://www.learnical.com/2013/02/willst-du-dass-sie-dir-zuhoren-oder-willst-du-dass-sie-es-lernen/
+
+Nur die Techniken zeigen, die ich gut beherrsche.
+
+Motto: Wenn man etwas langfristiges bauen möchte, sollte man einfachst mögliche Technik nehmen.
+
+Plan sehr gut kommunizieren, da ungewöhnlich. Erwartungshaltung und Widersprüche am ersten Tag klären.
+
+Zwei Teile
+----------
+
+Erster Teil:
+zwei Tage: Einführung der absolut notwendigen Grundlagen. Wenig bis keine Folien, gearbeitet wird mit der Originaldoku für GWT, die im Web liegt.
+Dabei entwickeln die Teilnehmer zusammen oder mit anderen Teilnehmern eine eigene Applikation. Welche ist ihnen überlassen.
+
+Zweiter Teil:
+Es werden an 3 Tagen Projekte als Themenkomplexe vorgestellt und die Teilnehmer setzen sich in Projektform damit auseinander. Dabei bauen Sie die Ideen der Beispielprojekte in ihre eigenen Projekte ein.
+- Hier wird noch selbständiger gearbeitet
+- Teilnehmer werden aktiv aufgefordert, weiter an ihren eigenen Anwendungen zu basteln
+
+Ein Projekt pro Tag, arbeit an eigenem Thema nach belieben. Ich gebe
+- Einführung
+- Projektrahmen
+- Coaching
+
+
+1. Tag
+------
+- Einführung und Hello World bis Mittag
+- Vertraut machen mit allen Widgets und bauen mit visuellem GUI-Editor bis Ende 1. Tag
+
+2. Tag
+------
+- RPC und Services
+- i18n
+- Client Bundles
+- Architektur-Übersicht
+
+3.-5. Tag - Projekte
+----------------------
+
+1. Tables, Grids und Cells
+2. Best Practices: Datenbanken, Entitäten, Transaktionen, Hibernate- und Spring-Integration
+3. Anbindung an Js Graph lib: http://techslides.com/50-javascript-charting-and-graphics-libraries/
+ - Jsni
+ - Compiler
+ - Debugging in Prod
+4. Große Projekte
+
+Backup-Themen
+-------------
+Themen die ich nicht aktiv behandele, sondern nur bei Nachfrage. Wo ich doof aussehen würde, wenn ich dazu nichts sagen würde
+- RequestFactory
+- Gin / Guice
+- Activities und Places
+- Nach weiteren Themen in GWT-Buch gucken / Buch als Ressource mit zum Seminar nehmen
+
+
+Vergleichbarer Workshop von Vaadin
+
+https://vaadin.com/services#vaadintraining
+
+8<------------------------------------------------
+
+GWT Fundamentals (2 days)
+
+Learn to use widgets and layouts provided by GWT to build a simple application typically required in a business environment. Includes different views, styling with CSS, using additional Widgets through plug-ins, handling events and accessing data through RPC.
+
+Topics covered
+
+Creating views
+Introducing available widgets
+Creating a simple composite widget
+Page layout
+Creating a view with Java, CSS
+Switching between views
+Server access
+GWT RPC
+Navigation
+Simple events
+Browser history
+Using plug-ins
+Additional widget types
+ClientResources
+CSS, images
+Security aspects
+Deployment
+
+
+Requirements
+
+Basic Java skills are required
+The program includes hands-on exercises so it's essential for you to bring your own laptop.
+
+
+What you get
+
+The course is divided 50/50 between lectures and hands-on exercises
+Good knowledge of GWT
+Book of Vaadin
+Lunch and refreshments
+
+
+Please note that the course and all of its materials are in English. Welcome to the GWT Training!
+
+------------------------------------------------>8
